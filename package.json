@@ -1,0 +1,14 @@
+{
+  "name": "display-small-app",
+  "version": "1.0.0",
+  "description": "Easily show status for you node.js program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Hæhre",
+  "license": "ISC",
+  "dependencies": {
+    "cli-cursor": "^2.1.0"
+  }
+}
