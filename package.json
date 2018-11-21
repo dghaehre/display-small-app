@@ -6,8 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dghaehre/display-small-app.git"
+  },
   "author": "Daniel Hæhre",
-  "license": "ISC",
+  "homepage": "https://github.com/dghaehre/display-small-app#readme",
+  "license": "MIT",
   "dependencies": {
     "cli-cursor": "^2.1.0"
   }
