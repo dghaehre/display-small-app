@@ -11,12 +11,11 @@ const red = "\x1b[31m%s\x1b[0m"
 const cyan = "\x1b[36m%s\x1b[0m" 
 
 const loader = [
-  "_-˜-_-˜-_-˜  ",
-  "-_-˜-_-˜-_-  ",
-  "˜-_-˜-_-˜-_  ",
+  ".",
+  "·",
+  "˙",
+  "·"
 ]
-
-const reverse = s => s.split("").reverse().join("")
 
 const displayData = s => 
   s.substring(1, s.length - 1)
@@ -30,7 +29,7 @@ class Display {
     this.errors = []
     this.statusmessage = ""
     this.loadindex = 0
-    this.timer = setInterval(() => this.write(), 120)
+    this.timer = setInterval(() => this.write(), 150)
   }
   write(finish="") {
     if(this.loadindex == loader.length - 1) {
@@ -39,7 +38,7 @@ class Display {
       this.loadindex = this.loadindex + 1
     }
     console.clear()
-    console.log(green, loader[this.loadindex] + this.name + reverse(loader[this.loadindex]))
+    console.log(green, loader[this.loadindex] + "    " + this.name)
     console.log("\n")
     console.log(cyan, finish !== "" ? finish : this.statusmessage)
     console.log(displayData(JSON.stringify(this.data, null, 2)))
