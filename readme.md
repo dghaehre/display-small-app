@@ -22,6 +22,8 @@ display.update({counter: 1})
 
 display.error("Not enough likes")
 
+display.report("Program report: Test = true")
+
 display.finish("Program finished")
 
 ```

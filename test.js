@@ -26,6 +26,12 @@ setTimeout(() => {
 }, 3000)
 
 setTimeout(() => {
+  display.report(`
+
+  Report:
+
+  Test = true
+  `)
   display.finish("Finished")
 }, 4000)
 
