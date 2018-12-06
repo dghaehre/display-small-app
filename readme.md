@@ -20,7 +20,9 @@ display.status("Fetching likes..")
 
 display.update({counter: 1})
 
-display.error("Not enough likes")
+let likes = display.get('counter')
+
+display.error(`${likes} is not enough likes")
 
 display.report("Program report: Test = true")
 

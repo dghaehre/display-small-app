@@ -15,6 +15,9 @@ setTimeout(() => {
 
 setTimeout(() => {
   display.update({ page: 2})
+  let page = display.get('page')
+  display.update({ page: page + 1 })
+
 }, 1000)
 
 setTimeout(() => {
@@ -26,7 +29,12 @@ setTimeout(() => {
 }, 3000)
 
 setTimeout(() => {
+  let data = display.get()
+  let page = display.get('page')
   display.report(`
+
+  data: ${JSON.stringify(data, null, 2)}
+  page: ${page}
 
   Report:
 

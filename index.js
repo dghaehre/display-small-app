@@ -46,6 +46,13 @@ class Display {
     console.log(red, this.errors.reduce(displayErrors, ""))
     console.log("\n\n")
   }
+  get(data="") {
+    if(data === "") {
+      return this.data
+    } else {
+      return this.data[`${data}`]
+    }
+  }
   update(data) {
     this.data = Object.assign({}, this.data, data)
   }

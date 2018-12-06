@@ -1,6 +1,6 @@
 {
   "name": "display-small-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easily show status for you node.js program",
   "main": "index.js",
   "scripts": {
